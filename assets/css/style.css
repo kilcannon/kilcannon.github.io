@@ -1,0 +1,223 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 16px;
+  line-height: 150%;f
+}
+
+/* currently not in use */
+h1 {
+  padding: 15px;
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: black;
+  text-align: left;
+}
+
+h2 {
+  font-size: 24px;
+  color: cadetblue;
+}
+
+h3 {
+  font-size: 20px;
+  color: cadetblue;
+}
+
+/* ensures a consistent background outside of the div elements containing text */
+.inner-section {
+  background-image: url("https://github.com/kilcannon/Basic-Portfolio/blob/master/assets/images/spiration_dark.png?raw=true");
+  min-height: 1000px;
+  background-repeat: repeat;
+}
+
+/* ensures the div containers with actual content stay within the 960px required boundary */
+.smaller-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#main-bio,
+#icon-bucket,
+#bio-image {
+  float: left;
+  background-color: white;
+  padding: 15px;
+}
+
+#main-bio {
+  width: 610px;
+  padding-right: 25px;
+  padding-left: 15px;
+  margin-right: 25px;
+  margin-top: 25px;
+  float: left;
+}
+
+#icon-bucket {
+  width: 240px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 35px;
+  margin-top: 25px;
+  float: right;
+}
+
+#primary-name {
+  width: 480px;
+  float: left;
+}
+
+#site-links {
+  width: 480px;
+  float: right;
+}
+
+#bio-image {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.topNavHome {
+    overflow: hidden;
+    max-width: 960px; /* ensures navigation bar matches width of the main page body */
+    margin: 0 auto;
+    font-color: white;
+}
+
+.topNavHome a {
+    float: left;
+    text-align: center;
+    padding: 14px;
+}
+
+#homeName {
+  background-color: cadetblue;
+  color: white;
+  font-size: 36px;
+  float: left;
+  padding: 15px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:link#nav-link {
+  color: grey;
+  text-decoration: none;
+}
+
+a:visited#nav-link {
+  color: grey;
+}
+
+a:hover#nav-link {
+  color: white;
+  background-color: cadetblue;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 0px; /*removes spacing for better hover link coloration */
+    margin-top: 12px;  /*moves links downward for better spacing from top of page */
+    list-style: none;  /* makes list without bullets, numbers, auto spacing */
+    font-size: 12px;
+    float: right;
+    text-align: center;
+}
+
+ nav li a {
+    display: block;
+    font-color: black;
+    margin-right: 0px;   /* space between links */
+    width: auto;  
+    padding: 6px;
+    font-weight: bold;
+    line-height: 2px;
+    border-left: 1px solid lightgrey;  /* defines where and how the vertical lines between each link appear */
+}
+
+/* remove from last item */
+nav li:last-child a {
+    border: none;
+}
+
+/* float clearing */
+nav:after {
+     content: '';
+     clear:right;
+     display:block;
+}
+
+/* changes horizontal braks to be grey and matching desired example */
+#body-break { 
+    border: 0;
+    height: 0;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+/* changes hr break to match desired coloration of other elements */
+#nav-break { 
+    margin: 0px;
+    border: 0px;
+    height: 0px;
+    border-top: 3px solid cadetblue;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;  /* changes height of footer */
+    width: 100%;
+    background-color: grey;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    line-height: 25px /* moves the text to be in the vertical center of footer height */
+}
+
+#contact-form {
+  background-color: white;
+  width: 610px;
+  padding-right: 25px;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  margin-right: 25px;
+  margin-top: 25px;
+  float: left;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid lightgrey;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    margin-bottom: 15px; 
+    resize: vertical /* Allow the user to vertically resize the textarea */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: cadetblue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+}
+
+/* Hover color darkening on submit button*/
+input[type=submit]:hover {
+    background-color: teal;
+}
