@@ -221,3 +221,21 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: teal;
 }
+
+.portfolio-bucket {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  float: left;
+}
+
+.portfolio-image-overlay {
+  position: absolute;
+  top: 180px;
+  width: 250px;
+  background-color: cadetblue;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
