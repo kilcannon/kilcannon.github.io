@@ -6,16 +6,6 @@ body {
   line-height: 150%;f
 }
 
-/* currently not in use */
-h1 {
-  padding: 15px;
-  margin: 0px;
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: black;
-  text-align: left;
-}
-
 h2 {
   font-size: 24px;
   color: cadetblue;
@@ -39,6 +29,7 @@ h3 {
   margin: 0 auto;
 }
 
+/*creates basic formatting for multiple ids used in the html files*/
 #main-bio,
 #icon-bucket,
 #bio-image {
@@ -47,6 +38,7 @@ h3 {
   padding: 15px;
 }
 
+/*establishes proper spacing for the bucket containing bio of profile page*/
 #main-bio {
   width: 610px;
   padding-right: 25px;
@@ -56,6 +48,7 @@ h3 {
   float: left;
 }
 
+/*establishes proper spacing for the icon bucket used on each profile page*/
 #icon-bucket {
   width: 240px;
   padding-left: 15px;
@@ -65,16 +58,19 @@ h3 {
   float: right;
 }
 
+/*nav bar name placement*/
 #primary-name {
   width: 480px;
   float: left;
 }
 
+/*nav bar links placement*/
 #site-links {
   width: 480px;
   float: right;
 }
 
+/*primary bio image placement and sizing*/
 #bio-image {
   width: 150px;
   height: 150px;
@@ -94,6 +90,7 @@ h3 {
     padding: 14px;
 }
 
+/*creates styling rules for name within the nav bar section*/
 #homeName {
   background-color: cadetblue;
   color: white;
@@ -102,6 +99,7 @@ h3 {
   padding: 15px;
 }
 
+/*css styling for links to be nicer and interactive*/
 a:link {
   text-decoration: none;
 }
@@ -186,6 +184,7 @@ nav:after {
     line-height: 25px /* moves the text to be in the vertical center of footer height */
 }
 
+/*creates the sizing requirements to fit all necessary fields with proper spacing*/
 #contact-form {
   background-color: white;
   width: 610px;
@@ -222,6 +221,7 @@ input[type=submit]:hover {
     background-color: teal;
 }
 
+/*establishes placement of each div that holds an image file*/
 .portfolio-bucket {
   position: relative;
   margin-left: 20px;
@@ -230,6 +230,7 @@ input[type=submit]:hover {
   float: left;
 }
 
+/*creates a fixed position div that labels the picture it rests upon*/
 .portfolio-image-overlay {
   position: absolute;
   top: 180px;
