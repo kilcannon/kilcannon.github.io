@@ -186,6 +186,7 @@ h4 {
   width: 150px;
   height: 150px;
   margin-right: 15px;
+  margin-bottom: 45px;
   background-color: #fff;
   border: solid;
   border-color: #ff5e5e;
@@ -198,7 +199,7 @@ h4 {
   width: 150px;
   height: 150px;
   transition: all 1s;
-  -webkit-transition: all .5s;
+  -webkit-transition: all .75s;
 }
 
 #hangman {
@@ -239,4 +240,15 @@ h4 {
   margin-top: 15px;
   width: 120px;
   height: 120px;
+}
+
+.gif-holder {
+  position: absolute;
+  bottom: 190px;
+  right: 200px;
+}
+
+/*div to hold ninja on portfolio screen*/
+.movement {
+  position: absolute;
 }
