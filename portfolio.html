@@ -4,123 +4,128 @@
 <head>
 	<meta charset="UTF-8">
 	
-	<title>My Basic Portfolio</title>
+	<title>Scott Bouchey Portfolio</title>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Reset CSS stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  
+  <!-- Bootstrap Js CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <!-- Custom Scroller Js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <!-- Local style sheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!-- Local js file -->
+  <script src="assets/js/logic.js"></script>
+
+  <!-- Favicon icon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 
 </head>
 
 <body>
 
-		<div class="topNavHome">
-				<section id="homeName">
-					Scott Bouchey
-				</section>
-			<nav>			
-				<ul>
-					<li><a id="nav-link" href="index.html">About</a></li>
-					<li><a id="nav-link" href="portfolio.html">Portfolio</a></li>
-					<li><a id="nav-link" href="contact.html">Contact</a></li>
-				</ul>
-			</nav>	
-		</div>
+  <div class="wrapper">
+    <nav id="sidebar">
+      <!-- Sidebar Header -->
+      <section align="center">
+        <div class="sidebar-header">
+          <img class="profile-pic" src="assets/images/profile_photo.jpg">
+          <h3>Scott Bouchey</h3>
+          <h6>Web Developert</h6>
+        </div>
+      </section>
+      <!-- Sidebar Links -->
+      <section align="center">
+        <ul class="list-unstyled components">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
+			<section align="center">
+				<a href="https://github.com/kilcannon" target="_blank">
+					<img class="profile-link-pics" src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/29-256.png" alt="github_icon" width="40px" height="40px">
+				</a>
+				<a href="https://www.linkedin.com/in/scottbouchey/" target="_blank">
+					<img class="profile-link-pics" src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/9-256.png" alt="linkedin_icon" width="40px" height="40px">
+				</a>
+				<a href="https://stackoverflow.com/users/7696731/scott-bouchey?tab=profile" target="_blank">
+					<img class="profile-link-pics needs-rounding" src="https://cdn3.iconfinder.com/data/icons/inficons/128/stackoverflow.png" alt="stackoverflow_icon" width="40px" height="40px">
+				</a>
+			</section>
+      <img class="raven-standard" src="assets/images/raven_icon.png">
+    </nav>
+    <div class="page-content">
+      <section> 
+        <h1>
+          Portfolio
+        </h1>
+      </section>
 
-		<hr id="nav-break">
+      <hr>
 
-		<div class="inner-section">
+      <div class="portfolio-section">
 
-			<div class="smaller-container">
+        <div class="project-holder">
+          <a href="https://lyme-love-your-movie-experience.github.io/LYME/">
+            <img id="lyme" src="assets/images/lyme.png">
+          </a>
+          <p class="portfolio-id-text">
+            LYME
+          </p>
+        </div>
 
-				<section id="main-bio">
+      	<div class="project-holder">
+          <a href="https://kilcannon.github.io/Hangman-Demo/">
+      		  <img id="hangman" src="assets/images/hangman.png">
+          </a>
+      		<p class="portfolio-id-text">
+      		  Hangman
+      		</p>
+      	</div>
 
-					<h2>
-						Portfolio
-					</h2>
-					
-					<hr id="body-break">
-						<a href="https://kilcannon.github.io/Hangman-Demo">
-						<div class="portfolio-bucket">
-							<img src="assets\images\placeholder1.jpg" alt="placeholder1" width="250px" height="250px">
-							<div class="portfolio-image-overlay">
-								<p>
-									Hangman
-								</p>
-							</div>
-						</div>
-						</a>
-						
-						<a href="https://kilcannon.github.io/week-4-game">
-						<div class="portfolio-bucket">
-							<img src="assets\images\placeholder2.jpg" alt="placeholder2" width="250px" height="250px">
-							<div class="portfolio-image-overlay">
-								<p>
-									RPG Game
-								</p>
-							</div>
-						</div>
-						</a>
-						
-						<a href="https://kilcannon.github.io/TriviaGame">
-						<div class="portfolio-bucket">
-							<img src="assets\images\placeholder3.jpg" alt="placeholder3" width="250px" height="250px">
-							<div class="portfolio-image-overlay">
-								<p>
-									Trivia Game
-								</p>
-							</div>
-						</div>
-						</a>
+      	<div class="project-holder">
+      		<a href="https://kilcannon.github.io/TriviaGame/">
+      			<img id="trivia" src="assets/images/trivia.png">
+      		</a>
+      		<p class="portfolio-id-text">
+      		  Trivia
+      		</p>
+      	</div>
 
-						<div class="portfolio-bucket">
-							<img src="assets\images\placeholder4.jpg" alt="placeholder4" width="250px" height="250px">
-							<div class="portfolio-image-overlay">
-								<p>
-									Rutgers Info Widget
-								</p>
-							</div>
-						</div>
-						
-						<a href="https://kilcannon.github.io/RPS-Multiplayer">
-						<div class="portfolio-bucket">
-							<img src="assets\images\placeholder5.jpg" alt="placeholder5" width="250px" height="250px">
-							<div class="portfolio-image-overlay">
-								<p>
-									Rock Paper Scissors
-								</p>
-							</div>
-						</div>
-						</a>
+      	<div class="project-holder">
+          <a href="https://kilcannon.github.io/week-4-game/">
+      		  <img id="rpg" src="assets/images/rpg.png">
+          </a>
+      		<p class="portfolio-id-text">
+      		  RPG
+      		</p>
+      	</div>
 
-				</section>
+      	<div class="project-holder">
+          <a href="https://kilcannon.github.io/RPS-Multiplayer/">
+      		  <img id="rps" src="assets/images/rps.png">
+      		</a>
+          <p class="portfolio-id-text">
+      		  RPS
+      		</p>
+      	</div>
 
-				<section id="icon-bucket">
 
-					<h3>
-						Connect with Me
-					</h3>
-
-					<hr id="body-break">
-
-					<section align="center">
-						<a href="https://github.com/kilcannon" target="_blank">
-							<img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/29-256.png" alt="github_icon" width="70px" height="70px">
-						</a>
-						<a href="https://www.linkedin.com/in/scottbouchey/" target="_blank">
-							<img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/9-256.png" alt="linkedin_icon" width="70px" height="70px">
-						</a>
-						<a href="https://stackoverflow.com/users/7696731/scott-bouchey?tab=profile" target="_blank">
-							<img src="https://cdn3.iconfinder.com/data/icons/inficons/128/stackoverflow.png" alt="stackoverflow_icon" width="70px" height="70px">
-						</a>
-					<section>
-				</section>
-			</div>
-		</div>
-		
-		<div class="footer">
-			<hr id="nav-break">
-  			<p>&copy; Copyright 2018 - Scott Bouchey</p>
-		
-		</div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
