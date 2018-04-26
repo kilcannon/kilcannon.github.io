@@ -9,17 +9,16 @@
 	<!-- Reset CSS stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   
-  <!-- Bootstrap Js CDN -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
-
-  <!-- Custom Scroller Js CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- Bootstrap JS CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
   <!-- Local style sheet -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -30,76 +29,170 @@
   <!-- Favicon icon -->
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 
+  <!-- Material Design icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
+
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <nav id="sidebar">
-      <!-- Sidebar Header -->
-      <section align="center">
-        <div class="sidebar-header">
-          <img class="profile-pic" src="assets/images/profile_photo.jpg">
-          <h3>Scott Bouchey</h3>
-          <h6>Web Developer</h6>
-        </div>
-      </section>
-      <!-- Sidebar Links -->
-      <section align="center">
-        <ul class="list-unstyled components">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+  <div class="jumbotron jumbotron-fluid">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Scott Bouchey</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Portfolio</a>
+          </li>
         </ul>
-      </section>
-			<section align="center">
-				<a href="https://github.com/kilcannon" target="_blank">
-					<img class="profile-link-pics" src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/29-256.png" alt="github_icon" width="40px" height="40px">
-				</a>
-				<a href="https://www.linkedin.com/in/scottbouchey/" target="_blank">
-					<img class="profile-link-pics" src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/9-256.png" alt="linkedin_icon" width="40px" height="40px">
-				</a>
-				<a href="https://stackoverflow.com/users/7696731/scott-bouchey?tab=profile" target="_blank">
-					<img class="profile-link-pics needs-rounding" src="https://cdn3.iconfinder.com/data/icons/inficons/128/stackoverflow.png" alt="stackoverflow_icon" width="40px" height="40px">
-				</a>
-			</section>
-      <img class="raven-standard" src="assets/images/raven_icon.png">
+      </div>
     </nav>
-    <div class="page-content">
-      <section> 
-        <h1>
-          Scott Bouchey
-        </h1>
-        <h4>
-          Aspiring Full-Stack Developer
-        </h4>
-      </section>
 
-      <hr>
-
-      <div class="contact-details">
-        <p class="call-out-text">
-          Address:
-        </p>
-        <p>
-          1237 Masonic Ave, San Francisco, CA 94117
-        </p>
-        <p class="call-out-text">
-          Email:
-        </p>
-        <p>
-          scott.bouchey@gmail.com
-        <p class="call-out-text">
-          Phone:
-        </p>
-        <p>
-          650.919.3648
-        </p>
-        <img id="raven" src="assets/images/bird.gif">
+    <div class="card primary-bucket text-center">
+      <a name="home"></a>
+      <div class="card-body">
+        <h1 class="card-title">Scott Bouchey</h1>
+        <h6 class="card-subtitle mb-2 text-muted">Aspiring Full-Stack Developer</h6>
+        <div class="card-contact-bucket">
+          <div class="card-contact-info">
+              <i class="material-icons location">location_city</i><p class="card-contact-text location-text">San Francisco, CA</p>
+          </div>
+          <div class="card-contact-info">
+            <i class="material-icons email">email</i><p class="card-contact-text email-text">scott.bouchey@gmail.com </p>
+          </div>
+          <div class="card-contact-info">
+            <i class="material-icons phone">phone</i><p class="card-contact-text phone-text">650.919.3648</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="social-media-bucket">
+    <a href="https://www.linkedin.com/in/scottbouchey/">
+      <img class="social-media-icon border" src="assets/images/linkedin.png">
+    </a>
+    <a href="https://github.com/kilcannon">
+      <img class="social-media-icon border" src="assets/images/github.png">
+    </a>
+    <a href="https://stackoverflow.com/users/7696731/scott-bouchey">
+      <img class="social-media-icon border" src="assets/images/stackoverflow.png">
+    </a>
+    <hr class="social-media-section">
+  </div>
+
+
+  <div class="about-me">
+    <a name="about-me"></a>
+    <h3>About Me</h3>
+    <p>
+      Lorem ipsum dolor sit amet, ancillae maiestatis deseruisse in cum, scripta feugiat reformidans ius id. Nec et lorem augue, eos no brute civibus, ei solet nonumy aperiri duo. An option adipisci sadipscing vis, at mea convenire appellantur, cu vix suavitate inciderint. Ne nam meliore menandri.
+    </p>
+    <p>
+      Cu aliquip incorrupte vim, an nam consul eripuit dissentias, ex vis nibh incorrupte. Tota voluptatum conclusionemque has cu. Sed equidem oportere ad. At aperiri phaedrum principes vel, vix reque partiendo delicatissimi ad. Ne inani eirmod eam, te eos explicari appellantur reprehendunt.
+    </p>
+    <hr class="about-me-section">
+  </div>
+
+  <div class="card-deck row1">
+    <a name="projects"></a>
+    <div class="card card-project lyme-project">
+      <img class="card-img-top lyme-img" src="assets/images/lyme.png" alt="Lyme">
+      <img class="card-img-hidden lyme-eye" src="assets/images/eye.png" alt="eye">
+      <div class="card-body">
+        <h5 class="card-title lyme-title">LYME</h5>
+        <p class="card-text lyme-text">The "Love Your Movie Experience" app transports you to a world where you don't compromise on the amenitiies you want during your movie watching experience.</p>
+      </div>
+      <div class="card-footer lyme-footer">
+        <small class="text-muted">Last updated 3 days ago</small>
+      </div>
+    </div>
+    <div class="card card-project trivia-project">
+      <img class="card-img-top trivia-img" src="assets/images/trivia.png" alt="Trivia">
+      <img class="card-img-hidden trivia-eye" src="assets/images/eye.png" alt="eye">
+      <div class="card-body">
+        <h5 class="card-title trivia-title">Science Trivia</h5>
+        <p class="card-text trivia-text">Test your knowledge with ten brain tickling questions.  Be sure to watch the clock!</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted trivia-footer">Last updated 5 weeks ago</small>
+      </div>
+    </div>
+    <div class="card card-project rpg-project">
+      <img class="card-img-top rpg-img" src="assets/images/rpg.png" alt="RPG">
+      <img class="card-img-hidden rpg-eye" src="assets/images/eye.png" alt="eye">
+      <div class="card-body">
+        <h5 class="card-title rpg-title">Pokemon RPG</h5>
+        <p class="card-text rpg-text">Relive your childhood memories with this interactive Pokemon battle game that pits you against three other epic first generation Pokemon.</p>
+      </div>
+      <div class="card-footer rpg-footer">
+        <small class="text-muted">Last updated 4 weeks ago</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-break">
+    <hr class="card-section">
+  </div>
+
+
+  <div class="card-deck row2">
+      <div class="card card-project rps-project">
+        <img class="card-img-top rps-img" src="assets/images/rps.png" alt="RPS">
+        <img class="card-img-hidden rps-eye" src="assets/images/eye.png" alt="eye">
+        <div class="card-body">
+          <h5 class="card-title rps-title">Rock, Paper, and Scissors</h5>
+          <p class="card-text rps-text">Play the classic game of Rock, Paper, and Scissors against your friends!  Log in from differnt terminals and battle it out like never befor.</p>
+        </div>
+        <div class="card-footer rps-footer">
+          <small class="text-muted">Last updated 5 weeks ago</small>
+        </div>
+      </div>
+    <div class="card card-project hangman-project">
+      <img class="card-img-top hangman-img" src="assets/images/hangman.png" alt="Hang Man">
+      <img class="card-img-hidden hamgman-eye" src="assets/images/eye.png" alt="eye">
+      <div class="card-body">
+        <h5 class="card-title hangman-title">Hang Man</h5>
+        <p class="card-text hangman-text">Experience the fun of hang man again!  The best part is that you no longer need pen and paper to challenge your friends.</p>
+      </div>
+      <div class="card-footer hangman-footer">
+        <small class="text-muted">Last updated 6 weeks ago</small>
+      </div>
+    </div>
+    <div class="card card-project gif-project">
+      <img class="card-img-top gif-img" src="assets/images/ninja.gif" alt="gif">
+      <img class="card-img-hidden gif-eye" src="assets/images/eye.png" alt="eye">
+      <div class="card-body">
+        <h5 class="card-title gif-title">Giftastic</h5>
+        <p class="card-text gif-text">Come see some of the best gifs that zero dollars will buy you! Create custom search buttons to find only the best gifs that match your mood!</p>
+      </div>
+      <div class="card-footer gif-footer">
+        <small class="text-muted">Last updated 3 weeks ago</small>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="#home">
+        <img class="home-icon-img" src="assets/images/home.png">
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>
