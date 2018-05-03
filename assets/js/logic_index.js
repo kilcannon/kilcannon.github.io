@@ -115,7 +115,7 @@ $(document).ready(function () {
 	})
 
 	$(".hangman-project").on("click", function() {
-		window.location.href="https://kilcannon.github.io/Hangman-Demo/"
+		window.location.href="https://github.com/kilcannon/liri-node-app"
 	})
 
 	$(".gif-project").on("click", function() {
