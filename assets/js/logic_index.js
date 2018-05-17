@@ -111,7 +111,7 @@ $(document).ready(function () {
 	})
 
 	$(".rpg-project").on("click", function() {
-		window.location.href="https://kilcannon.github.io/week-4-game/"
+		window.location.href="https://github.com/kilcannon/bamazon"
 	})
 
 	$(".hangman-project").on("click", function() {
