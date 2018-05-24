@@ -107,7 +107,7 @@ $(document).ready(function () {
 	})
 
 	$(".rps-project").on("click", function() {
-		window.location.href="https://kilcannon.github.io/RPS-Multiplayer/"
+		window.location.href="https://kilcannon.github.io/friend-finder/"
 	})
 
 	$(".rpg-project").on("click", function() {
