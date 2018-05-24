@@ -107,7 +107,7 @@ $(document).ready(function () {
 	})
 
 	$(".rps-project").on("click", function() {
-		window.location.href="https://kilcannon.github.io/friend-finder/"
+		window.location.href="https://damp-falls-31424.herokuapp.com/"
 	})
 
 	$(".rpg-project").on("click", function() {
